@@ -63,7 +63,7 @@ export default function MealWeek( { weekData, mealData, selections, setData }: {
 			filled={ !!Object.keys( weekData.treats ).length }
 			disabled={ weekData.skip }
 			color='secondary'
-			onClick={ () => setData( { treats: weekData.treats ? {} : { 'true': 1 } } ) }
+			onClick={ e => setAddAnchorEl( e.currentTarget ) }
 		>Add Local Treats</MealButton>
 		<MealSelection
 			weekData={ weekData.treats }
