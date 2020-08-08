@@ -11,7 +11,16 @@ import Loading from '../components/loading';
 import Navigation from '../components/navigation';
 import { wrapper } from '../lib/store/store';
 
-const theme = createMuiTheme( {} );
+const theme = createMuiTheme( {
+	palette: {
+		primary:   {
+			main: '#427c42'
+		},
+		secondary: {
+			main: '#cd790c'
+		}
+	}
+} );
 
 function App( { Component, pageProps }: AppProps ) {
 	const store = useStore();
@@ -19,6 +28,9 @@ function App( { Component, pageProps }: AppProps ) {
 	return <>
 		<Head>
 			<title>App</title>
+			<meta
+				name='viewport'
+				content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no'/>
 		</Head>
 		<PersistGate persistor={ store[ '__persistor' ] } loading={ <Loading/> }>
 			<ThemeProvider theme={ theme }>

@@ -6,9 +6,6 @@ export default class MyDocument extends Document {
 		// noinspection HtmlRequiredTitleElement
 		return <Html lang='en'>
 			<Head>
-				<meta
-					name='viewport'
-					content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no'/>
 				<meta name='description' content='From Farm to Your Doorstep - Shop Local, Eat Local'/>
 				
 				{/*<link rel='icon' type='image/png' sizes='32x32' href='/icons/favicon-32x32.png'/>*/ }
