@@ -1,4 +1,4 @@
-export const scheduleData = Array( 1 )
+export const scheduleData = Array( 6 )
 	.fill( undefined )
 	.map( ( data, i ) => ( {
 		day:       `Sunday ${ i * 7 }`,
